@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Robert Mwangi">
+    <meta name = "description" content = "Contact info">
+    <title>Contact</title>
+    <link rel="icon" href="graphics/taco.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__h1">Contact us</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li>
+                    <a href="/">HomePage</a>
+                </li>
+                <li>
+                    <a href="/#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="hours.html">Store Hours</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <figure>
+            <img src="graphics/spice1.jpeg" alt="Tacos and Drinks" title="4 Tacos " width="400" height="260"
+            >
+            <figcaption class="offscreen">
+                    4 Tacos
+            </figcaption>
+        </figure>
+    </section>
+    <main class="main">
+        <article class="main__article contact">
+            <h2 class="contact__h2">Our Contact Form</h2>
+            <form action="https://httpbin.org/get" method="get" class="contact__form">
+                 <fieldset class="contact__fieldset">
+                    <legend class="offscreen">Leave us a review</legend>
+                    <p class="contact__p">
+                        <label class="contact__label" for="name">Name:</label>
+                        <input class="contact__input" type="text" name="name" id="name" placeholder="your name?" required autocomplete="on" autofocus>
+                    </p>
+                    <p class="contact__p">
+                        <label class="contact__label" for="email">Email:</label>
+                        <input class="contact__input" type="email" name="email" id="email" placeholder="your email?" required autocomplete="on">
+                    </p>
+                    <p class="contact__p">
+                        <label class="contact__label" for="phone number">Phone Number:</label>
+                        <input class="contact__input" type="tel" name="phone number" id="phone number" placeholder="your phone number?" required autocomplete="on" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}-">
+                    </p>
+                    <p class="contact__p">
+                        <label class="contact__label" for="Taco">What's your Favourite Taco:</label>
+                        <select class="contact__select" name="Taco" id="Taco">
+                            <optgroup>
+                                <option value="crunchy">Crunchy</option>
+                                <option value="soft">Soft</option>
+                            </optgroup>
+                            <optgroup>
+                                <option value="All of them">All of them</option>
+                                <option value="None of them">None of them</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    <br>
+                    <p class="contact__p">
+                    <label for="message" class="contact__label">Your Message:</label> 
+                    <textarea class="contact__textarea" name="message" id="message" cols="30" rows="10" placeholder="Type Your Message here..." ></textarea>
+                        </p>
+                </fieldset>
+                <button class="contact__button" type="submit">Send</button>
+                <button class="contact__button" type="reset">Reset</button>
+            </form>
+        </article>
+        <article class="main__article">
+            <h2>Our Location</h2>
+            <address>
+                254 Hungry Street <br>
+                Food City
+                <br><br>
+                Phone: <a href="tel:+255248954785">255248954785</a>
+            </address>
+        </article>
+    </main>
+    <hr>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy;</span>
+            <span class="nowrap">Robert's Taco Shop</span>
+        </p>
+    </footer>
+</body>
+
+</html>
